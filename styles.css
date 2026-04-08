@@ -1,0 +1,24 @@
+/* ===== CUSTOM STYLES & ANIMATIONS ===== */
+    /* Base typography setup */
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, h5, h6, .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    /* Subtle bounce animation for hero arrow */
+    @keyframes bounce-subtle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+    .animate-bounce-subtle {
+      animation: bounce-subtle 2s infinite ease-in-out;
+    }
+    
+    /* Ensure inputs take full height properly */
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+    }
